@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h2>Question 1</h2>
+        <button id="btn1">Question 1</button>
+        <h2>Question 2</h2>
+        <button id="btn2">Question 2</button>
+        
+        
+        <script>
+            document.getElementById("btn1").onclick = () =>{
+            window.alert("This is alert");
+        }
+        
+        document.getElementById("btn2").onclick = () => {
+            var total = 0 ;
+            let sub = 1;
+            for(let i = 0 ; i <5 ; i++){
+                total +=parseInt(prompt("Enter mark " + sub++));
+            }
+            (total/5 > 30) ? window.alert("Congratulations! You passed.") : window.alert("Better luck next time.");
+
+            document.getElementById("sum").innerHTML = "Total: " + total;
+            document.getElementById("avg").innerHTML = "Average: " + total/5;            
+        }
+        </script>
+    </body>
+</html>

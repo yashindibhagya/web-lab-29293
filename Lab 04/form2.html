@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h2>Car Registration</h2>
+        <form action="form2.php" method="get">
+        Owner Name 
+        &nbsp; <input type="text" name="fname" placeholder="Owner Name"><br/>
+        Email 
+        &nbsp;&nbsp;<input type="text" name="email" placeholder="Email"><br/>
+        Phone <br/>number 
+        <input type="text" name="tel" placeholder="Phone number"><br/>
+        Country 
+        <select name="Country" id="countries"><br/>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="India">India</option>     
+        </select><br/>
+        Car Model
+        <input type="text" name="model"><br/>
+        Manufacture <br/> Year
+        <select name="Manufacture" id="manu">
+            <option value="Select Year">Select Year</option>
+            <option value="2002">2002</option>
+        </select> <br/>
+        Transmission
+        <input type="radio" name="trans" value="manual">Manual
+        <input type="radio" name="trans" value="auto">Auto <br/>
+        Other
+        <input type="textbox" ><br/>
+        <input type="checkbox">I agree to the terms and conditions<br/>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

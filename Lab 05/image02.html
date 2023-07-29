@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>
+            Sign up form
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(nature_0005.jpg);
+                padding: 0 10px;
+            }
+            .wrapper{
+                max-width: 500px;
+                width: 100%;
+                background-color: black;
+                color: greenyellow;
+                margin: 20px auto;
+                padding: 30px;
+                box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+            }
+            .title{
+                height: 30px;
+                font-size: 24px;
+                text-align: center;
+                background-color: yellowgreen;
+                color: black;
+                border-radius: 3px;
+                margin: 10px 0px;
+            }
+            .footer{
+                height: 40px;
+                font-size: 24px;
+                text-align: center;
+                background-color: yellowgreen;
+                color: black;
+                border-radius: 3px;
+                margin: 10px 0px; 
+            }
+            .submit{
+                height: 20px;
+                width: 20%;
+                background-color: green;
+                color: white;
+                border-radius: 3px;
+                left: 20%;
+                margin-left: 10%;
+            }
+            .reset{
+                height: 20px;
+                width: 20%;
+                background-color: red;
+                color: white;
+                border-radius: 3px;
+                margin-left: 40%;
+                margin-top: -20px;
+            }
+            .wrapper.form.input_field{
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+            }
+            .wrapper.form.input_input{
+                width: 100%;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+                <form action="signup.php" method="get">
+                    <div class="title">
+                        Sign Up
+                    </div>
+                    <div class="form">
+                        <div class="input_field">
+                        <h5>First Name</h5>
+                    <input type="text" placeholder="Enter First Name" class="input"><br/>
+                    <h5>Last Name</h5>
+                    <input type="text" placeholder="Enter Last Name" class="input"><br/>
+                    <h5>Date of Birth</h5>
+                    <select class="input">
+                        <option value="Date">Date</option>
+                        <option value="01">01</option><option value="02">02</option>
+                        <option value="03">03</option><option value="04">04</option>
+                        <option value="05">05</option><option value="06">06</option>
+                        <option value="07">07</option><option value="08">08</option>
+                        <option value="09">09</option><option value="10">10</option>
+                        <option value="11">11</option><option value="12">12</option>
+                        <option value="11">13</option><option value="14">14</option>
+                        <option value="15">15</option><option value="16">16</option>
+                        <option value="17">17</option><option value="18">18</option>
+                        <option value="19">19</option><option value="20">20</option>
+
+                    </select>
+                    <select id="selectmonth" class="input">
+                        <option value="Month">Month</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select class="input">
+                        <option value="Year">Year</option>
+                        <option value="2016">2016</option><option value="2017">2017</option>
+                        <option value="2018">2018</option><option value="2019">2019</option>
+                        <option value="2020">2020</option><option value="2021">2021</option>
+                        <option value="2022">2022</option><option value="2023">2023</option>
+                    </select><br/>
+                    <h5>Gender</h5>
+                    <input type="radio" name="gender" value="male" class="input">Male
+                    <input type="radio" name="gender" value="female" class="input">Female<br/>
+                    <h5>Country</h5>
+                    <select class="input">
+                        <option value="srilanka">Sri Lanka</option><option value="india">India</option>
+                        <option value="afghanistan">Afghanistan</option><option value="albania">Albania</option>
+                        <option value="algeria">Algeria</option><option value="zimbabwe">Zimbabwe</option>
+                    </select><br/>
+                    E-mail
+                    <input type="email" placeholder="Enter E-mail" class="input"><br/>
+                    Phone
+                    <input type="text" placeholder="Enter Phone" class="input"><br/>
+                    Password
+                    <input type="password" id="password" name="password" class="input"><br/>
+                    Confirm Password
+                    <input type="password" id="confirm_password" name="confirm_password" class="input"><br/>
+                    <input type="checkbox" class="input"> I Agree to the Terms of use<br/>
+                    <div class="footer">
+                        <div class="submit">
+                            <input type="submit" value="Send" class="input">
+                        </div>
+                        <div class="reset">
+                            <input type="reset" value="Reset" class="input"></div>
+                        </div>
+                    
+                    </div>
+                </div>
+                </form>
+        </div>
+    </body>
+</html>

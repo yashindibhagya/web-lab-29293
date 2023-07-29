@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h2>Question 7</h2>
+        <button id="q7">Question 7</button><br/>
+        
+        <h2>Question 8</h2>
+        <button id="q8">Question 8</button>
+
+        <script>
+            document.getElementById("q7").onclick = () => {
+            var number1 = parseInt(prompt("Enter the first number"));
+            var number2 = parseInt(prompt("Enter the second number"));
+            var operator = prompt("Enter the operator (+, -, *, /)");
+
+            var result = 0;
+            switch (operator) {
+                case "+":
+                result = number1 + number2;
+                break;
+                case "-":
+                result = number1 - number2;
+                break;
+                case "*":
+                result = number1 * number2;
+                break;
+                case "/":
+                result = number1 / number2;
+                break;
+                default:
+                alert("Invalid operator");
+                break;
+            }
+
+            alert(result);
+        }
+
+
+            document.getElementById("q8").onclick = () => {
+            var nic = prompt("Enter your NIC");
+            alert(nic.substring(0, 4));
+            
+        }
+        </script>
+    </body>
+</html>

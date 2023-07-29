@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Question 5</h2>
+        <button id="q5">Question 5</button>
+        
+        <h2>Question 6</h2>
+        <button onclick="x()">Google</button>
+        
+        <script>
+            document.getElementById("q5").onclick = () => {
+            var day = parseInt(prompt("Enter a number from 1-7"));
+            var dayName = "";
+            switch (day) {
+                case 1:
+                dayName = "Monday";
+                break;
+                case 2:
+                dayName = "Tuesday";
+                break;
+                case 3:
+                dayName = "Wednesday";
+                break;
+                case 4:
+                dayName = "Thursday";
+                break;
+                case 5:
+                dayName = "Friday";
+                break;
+                case 6:
+                dayName = "Saturday";
+                break;
+                case 7:
+                dayName = "Sunday";
+                break;
+                default:
+                dayName = "Invalid input";
+                break;
+            }
+
+            alert(dayName);
+        }
+
+
+            function x(){
+                var input=window.confirm("Are you sure? ");
+                if(input){
+                    window.location.href="https://www.google.com/";
+                }
+                else{
+                    window.alert("You decide to stay");
+                }
+                    
+            
+                    
+     }
+        </script>
+    </body>
+</html>
